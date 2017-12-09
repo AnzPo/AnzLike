@@ -5,7 +5,7 @@ from LINEFTB.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,ast,os,subprocess,requests
 
-cl = LINETCR.LINE()
+cl = LINEFTB.LINE()
 cl.login(qr=True)
 cl.loginResult()
 print "===[Login Success]==="
