@@ -12,44 +12,44 @@ print "===[Login Success]==="
 
 
 helpMessage ="""
-===[FELER TEAM BOT]===
-🔐 Creator
-🔐 Gcreator
-🔐 List group
-🔐 Leave group:
-🔐 Cancel
-🔐 Url:on/off
-🔐 Autojoin:on/off
-🔐 Autocancel:on/off
-🔐 Qr:on/off
-🔐 Autokick:on/off
-🔐 Contact:on/off
-🔐 Gift (1,2,3)
-🔐 Tagall
-🔐 Setview
-🔐 Viewseen
-🔐 Boom
-🔐 Add all
-🔐 Recover
-🔐 Remove all chat
-🔐 Gn: (name)
-🔐 Kick: (mid)
-🔐 Invite: (mid)
-🔐 Welcome
-🔐 Bc: (text)
-🔐 Cancelall
-🔐 Gurl
-🔐 Self Like
-🔐 Speed
-🔐 Ban
-🔐 Unban
-🔐 Copy @
-🔐 Backup me
-🔐 Ban @
-🔐 Unban @
-🔐 Banlist
-🔐 Kill ban
-🔐 Bot:restart
+>>>>>AnzOfficialBot<<<<<
+|🔐 Creator
+|🔐 Gcreator
+|🔐 List group
+|🔐 Leave group:
+|🔐 Cancel
+|🔐 Url:on/off
+|🔐 Autojoin:on/off
+|🔐 Autocancel:on/off
+|🔐 Qr:on/off
+|🔐 Autokick:on/off
+|🔐 Contact:on/off
+|🔐 Gift (1,2,3)
+|🔐 Tagall
+|🔐 Setview
+|🔐 Viewseen
+|🔐 Boom
+|🔐 Add all
+|🔐 Recover
+|🔐 Remove all chat
+|🔐 Gn: (name)
+|🔐 Kick: (mid)
+|🔐 Invite: (mid)
+|🔐 Welcome
+|🔐 Bc: (text)
+|🔐 Cancelall
+|🔐 Gurl
+|🔐 Self Like
+|🔐 Speed
+|🔐 Ban
+|🔐 Unban
+|🔐 Copy @
+|🔐 Backup me
+|🔐 Ban @
+|🔐 Unban @
+|🔐 Banlist
+|🔐 Kill ban
+|🔐 Bot:restart
 """
 
 mid = cl.getProfile().mid
