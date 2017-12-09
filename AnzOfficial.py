@@ -13,47 +13,48 @@ print "===[Login Success]==="
 
 helpMessage ="""
 ===[FELER TEAM BOT]===
-✖ Creator
-✖ Gcreator
-✖ List group
-✖ Leave group:
-✖ Cancel
-✖ Url:on/off
-✖ Autojoin:on/off
-✖ Autocancel:on/off
-✖ Qr:on/off
-✖ Autokick:on/off
-✖ Contact:on/off
-✖ Gift (1,2,3)
-✖ Tagall
-✖ Setview
-✖ Viewseen
-✖ Boom
-✖ Add all
-✖ Recover
-✖ Remove all chat
-✖ Gn: (name)
-✖ Kick: (mid)
-✖ Invite: (mid)
-✖ Welcome
-✖ Bc: (text)
-✖ Cancelall
-✖ Gurl
-✖ Self Like
-✖ Speed
-✖ Ban
-✖ Unban
-✖ Copy @
-✖ Backup me
-✖ Ban @
-✖ Unban @
-✖ Banlist
-✖ Kill ban
+🔐 Creator
+🔐 Gcreator
+🔐 List group
+🔐 Leave group:
+🔐 Cancel
+🔐 Url:on/off
+🔐 Autojoin:on/off
+🔐 Autocancel:on/off
+🔐 Qr:on/off
+🔐 Autokick:on/off
+🔐 Contact:on/off
+🔐 Gift (1,2,3)
+🔐 Tagall
+🔐 Setview
+🔐 Viewseen
+🔐 Boom
+🔐 Add all
+🔐 Recover
+🔐 Remove all chat
+🔐 Gn: (name)
+🔐 Kick: (mid)
+🔐 Invite: (mid)
+🔐 Welcome
+🔐 Bc: (text)
+🔐 Cancelall
+🔐 Gurl
+🔐 Self Like
+🔐 Speed
+🔐 Ban
+🔐 Unban
+🔐 Copy @
+🔐 Backup me
+🔐 Ban @
+🔐 Unban @
+🔐 Banlist
+🔐 Kill ban
+🔐 Bot:restart
 """
 
 mid = cl.getProfile().mid
-Creator="u9025557127eaca9b2ddd068e2040c6ce"
-admin=["u9025557127eaca9b2ddd068e2040c6ce"]
+Creator="ue03936a40ae6702f76e58399131504f7"
+admin=["ue03936a40ae6702f76e58399131504f7"]
 
 contact = cl.getProfile()
 profile = cl.getProfile()
@@ -244,11 +245,11 @@ def bot(op):
             elif msg.text is None:
                 return
 #--------------------------------------------------------
-            elif msg.text in ["Creator"]:
+            elif msg.text in ["Creator","creator","Pembuat"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Creator}
                 cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Yang Bikin BOT")
+		cl.sendText(msg.to,"Itu Yg Buat :V")
 #--------------------------------------------------------
 	    elif msg.text in ["Group creator","Gcreator","gcreator"]:
 		ginfo = cl.getGroup(msg.to)
@@ -256,7 +257,7 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
                 cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Yang Buat Grup Ini")
+		cl.sendText(msg.to,"Noh Gcreatornya")
 #--------------------------------------------------------
             elif msg.contentType == 16:
                 if wait["Timeline"] == True:
@@ -465,7 +466,7 @@ def bot(op):
                         total = '\n\nTotal %i viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S') )
                         cl.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
                     else:
-                        cl.sendText(msg.to, "Belum ada viewers")
+                        cl.sendText(msg.to, "Kaga Ada :v")
                     print "@viewseen"
 #--------------------------------------------------------
 
@@ -485,14 +486,14 @@ def bot(op):
 		Mids = [contact.mid for contact in thisgroup[0].members]
 		mi_d = Mids[:33]
 		cl.findAndAddContactsByMids(mi_d)
-		cl.sendText(msg.to,"Success Add all")
+		cl.sendText(msg.to,"Berhasil Add Semuanya")
 #--------------------------------------------------------
 	    elif "Recover" in msg.text:
 		thisgroup = cl.getGroups([msg.to])
 		Mids = [contact.mid for contact in thisgroup[0].members]
 		mi_d = Mids[:33]
 		cl.createGroup("Recover", mi_d)
-		cl.sendText(msg.to,"Success recover")
+		cl.sendText(msg.to,"Success~")
 #--------------------------------------------------------
 	    elif msg.text in ["Remove all chat"]:
 		cl.removeAllMessages(op.param2)
@@ -526,8 +527,8 @@ def bot(op):
 		bc = msg.text.replace("Bc: ","")
 		gid = cl.getGroupIdsJoined()
 		for i in gid:
-		    cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~imrra")
-		cl.sendText(msg.to,"Success BC BosQ")
+		    cl.sendText(i,"_____♢Sekedar Bc♢_____\n\n"+bc+"\n\nContact Me:http://line.me/ti/p/~appan.f")
+		cl.sendText(msg.to,"Success BCnya")
 #--------------------------------------------------------
             elif msg.text in ["Cancelall"]:
                 gid = cl.getGroupIdsInvited()
